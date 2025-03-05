@@ -13,7 +13,7 @@ load_dotenv()
 TOKEN = os.getenv('DISCORD_TOKEN')
 GEMINI_API_KEY = os.getenv('GEMINI_API_KEY')
 
-client = genai.Client(api_key="AIzaSyC5ZfxuOadK2HckeKm3JbGsOGr_zXQETAA")
+client = genai.Client(api_key=GEMINI_API_KEY)
 
 # Bot setup
 intents = discord.Intents.default()
